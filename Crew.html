@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FireFly - Crew Module</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://lh3.googleusercontent.com/-HtZivmahJYI/VUZKoVuFx3I/AAAAAAAAAcM/thmMtUUPjbA/Blue_square_A-3.PNG" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="forcompany.css">
+	<link rel="stylesheet" href="AdminSignin.css">
+	<script  src="jquery-1.9.1.min.js"></script>
+	<script src="Crew.js"></script>
+	
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="FireFly_home.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="logout.php"><span class="glyphicon glyphicon-user"> Sign out&nbsp;</span>						</a>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron text-center">
+		<img src="Firefly.png" style="width: 400px; height: 250px;">
+
+	</div>
+
+<h1><center>Crew Management</center></h1>
+
+	<div class="container">
+		
+		<div class="btn-group btn-group-justified">
+			<div class="btn btn-warning" id="a">Add</div>
+			<div class="btn btn-warning" id="u">Update</div>
+			<div class="btn btn-warning" id="d">Delete</div>
+		</div>
+		<hr />
+		<div id = "add">
+		<form class="form-horizontal" role="form" id="addf">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="flightno_1">Flight No.</label>
+				<div class="col-sm-6">
+					<input type="flightno_1" class="form-control" id="flightno_1" placeholder="" name="flightno_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pilot_1">Pilot</label>
+				<div class="col-sm-6">
+					<input type="pilot_1" class="form-control" id="pilot_1" placeholder="" name="pilot_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="copilot_1">Co-pilot</label>
+				<div class="col-sm-6">
+					<input type="copilot_1" class="form-control" id="copilot_1" placeholder="" name="copilot_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant1_1">Attendant 1</label>
+				<div class="col-sm-6">
+					<input type="attendant1_1" class="form-control" id="attendant1_1" placeholder="" name="attendant1_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant2_1">Attendant 2</label>
+				<div class="col-sm-6">
+					<input type="attendant2_1" class="form-control" id="attendant2_1" placeholder="" name="attendant2_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant3_1">Attendant 3</label>
+				<div class="col-sm-6">
+					<input type="attendant3_1" class="form-control" id="attendant3_1" placeholder="" name="attendant3_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant4_1">Attendant 4</label>
+				<div class="col-sm-6">
+					<input type="attendant4_1" class="form-control" id="attendant4_1" placeholder="" name="attendant4_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant5_1">Attendant 5</label>
+				<div class="col-sm-6">
+					<input type="attendant5_1" class="form-control" id="attendant5_1" placeholder="" name="attendant5_1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant6_1">Attendant 6</label>
+				<div class="col-sm-6">
+					<input type="attendant6_1" class="form-control" id="attendant6_1" placeholder="" name="attendant6_1">
+				</div>
+			</div>
+			<br />
+			<div class="form-group">        
+				<div class="col-sm-offset-2 col-sm-6">
+					<input type = "button" class="btn btn-warning btn-block" name="btn-submit" id="ad" value = "Submit" />
+				</div>
+			</div>
+		</form>
+		</div>
+		<div id = "update">
+		<form class="form-horizontal" role="form" id="result">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="flightno_2">Flight No.</label>
+				<div class="col-sm-6">
+					<input type="flightno_2" class="form-control" id="flightno_2" placeholder="" name="flightno_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pilot_2">Pilot</label>
+				<div class="col-sm-6">
+					<input type="pilot_2" class="form-control" id="pilot_2" placeholder="" name="pilot_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="copilot_2">Co-pilot</label>
+				<div class="col-sm-6">
+					<input type="copilot_2" class="form-control" id="copilot_2" placeholder="" name="copilot_2"> 
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant1_2">Attendant 1</label>
+				<div class="col-sm-6">
+					<input type="attendant1_2" class="form-control" id="attendant1_2" placeholder="" name="attendant1_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant2_2">Attendant 2</label>
+				<div class="col-sm-6">
+					<input type="attendant2_2" class="form-control" id="attendant2_2" placeholder="" name="attendant2_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant3_2">Attendant 3</label>
+				<div class="col-sm-6">
+					<input type="attendant3_2" class="form-control" id="attendant3_2" placeholder="" name="attendant3_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant4_2">Attendant 4</label>
+				<div class="col-sm-6">
+					<input type="attendant4_2" class="form-control" id="attendant4_2" placeholder="" name="attendant4_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant5_2">Attendant 5</label>
+				<div class="col-sm-6">
+					<input type="attendant5_2" class="form-control" id="attendant5_2" placeholder="" name="attendant5_2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="attendant6_2">Attendant 6</label>
+				<div class="col-sm-6">
+					<input type="attendant6_2" class="form-control" id="attendant6_2" placeholder="" name="attendant6_2">
+				</div>
+			</div>			
+			<br />
+			<div class="form-group">        
+				<div class="col-sm-offset-2 col-sm-6">
+					<input type = "button" class="btn btn-warning btn-block" value="Update" id="up" />
+					<input type = "button" class="btn btn-warning btn-block" value="Delete" id="de" />
+				</div>
+			</div>
+		</form>
+		</div>
+		<div id = "delete">
+
+	    </div>
+		<br /><br /><br />
+	</div>	
+	
+	<footer class="container-fluid text-center">
+		<p>FireFly Sdn. Bhd.</p>		
+	</footer>
+</body>
+</html>
